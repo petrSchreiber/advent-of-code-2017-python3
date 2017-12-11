@@ -9,8 +9,8 @@ def is_correct(passphrase, allow_permutations=True):
 
     results = Counter(words)
 
-    max_occurences = results.most_common(1)
-    return True if max_occurences[0][1] == 1 else False
+    max_occurrences = results.most_common(1)
+    return True if max_occurrences[0][1] == 1 else False
 
 
 def count_valid_passphrases(passphrases, allow_permutations=True):
